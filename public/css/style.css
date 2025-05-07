@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section .hero {
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+  
+  .chat-box {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .chat-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .chat-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  #messages li {
+    background: #f3f4f6;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  #message {
+    width: calc(100% - 80px);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #4338ca;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
